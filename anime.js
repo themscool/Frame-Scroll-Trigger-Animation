@@ -4,6 +4,7 @@ const frames = { currentIndex: 0, maxIndex: 1502 };
 const images = [];
 let imagesLoaded = 0;
 
+// preloaded functionality
 function preloadImages() {
     for (let i = 1; i <= frames.maxIndex; i++) {
         const img = new Image();
@@ -53,4 +54,5 @@ function startAnimation() {
     });
 }
 
+// calling loadImage function will load the image from the cache
 preloadImages();
